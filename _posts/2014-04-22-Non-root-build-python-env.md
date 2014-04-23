@@ -79,6 +79,7 @@ easy_install -i http://pypi.douban.com/simple/ SQLAlchemy
 easy_install -i http://pypi.douban.com/simple/ virtualenv
 ```
 以上就是全部，有几点需要留意:
+
 - `mkdir $HOME/local/xxx......`我个人一般习惯于在HOME目录下创建一个『伪根目录结构』，将所有用户态的应用，都安装到$HOME下。
 - 使用了sohu.com的源，你可以改为163的或者官方的均可
 - 修改用户bash_profile文件，对于桌面用户，此处可能需要改为 $HOME/.bashrc
