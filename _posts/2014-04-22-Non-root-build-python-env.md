@@ -47,24 +47,18 @@ make install
 所以，构建一个用户态的Python极为简单，简单到就是『纸老虎』一只。简言之，配置以PATH为首的一系列环境变量即可，并将其持久化到用户配置文件如 `$HOME/.bash_profile` 或 `$HOME/.bashrc` 中，一般而言，桌面用户选择后者即可，参考此处[关于Login Shell与Non Login Shell的区别](https://wido.me/sunteya/understand-bashrc-and-profile)。
 
 这里有我常使用的一个脚本，通常的用法是复制并在如[XShell](http://www.netsarang.com/products/xsh_overview.html)之类的工具上直接按`Shift-Insert`即可粘贴到终端中，如下：
+
 ``` Bash
-#我一般习惯于在$HOME目录下创建一个『伪根目录结构』，将所有用户态的应用，都安装到$HOME下。
 mkdir $HOME/local/{bin,lib,include,sbin,etc,package} -pv
 cd $HOME/local/package
-#使用了sohu.com的源，你可以改为163的或者官方的均可
 wget -c http://mirrors.sohu.com/python/2.7.6/Python-2.7.6.tgz
 tar xvfz Python-2.7.6.tgz
 cd Python-2.7.6
-#重要，指明安装目录为 $HOME/local，make install命令会自动将其二进制文件copy到 $HOME/local/bin下，将库复制到$HOME/local/lib下。
 ./configure --prefix=$HOME/local
 make
 make install
 
-
-#修改用户bash_profile文件，对于桌面用户，此处可能需要改为 $HOME/.bashrc
-#留意下面的改动，只简单的修改了PATH与LD_LIBRARY_PATH变量，对于部分应用，你也许需要如CLASSPATH(Java)，MANPATH等
 cat >>~/.bash_profile <<EOF
-
 PATH=\$HOME/local/bin:\$PATH
 LD_LIBRARY_PATH=\$HOME/local/lib:\$LD_LIBRARY_PATH
 
@@ -72,22 +66,25 @@ export PATH
 export LD_LIBRARY_PATH
 EOF
 
-#source命令使环境变量立即生效，同样，对于服务器用户而言使用以下文件名是正确的，对于桌面用户而言，可能需要修正为$HOME/.bashrc
 source $HOME/.bash_profile
-
-#使用豆瓣源，安装一些常见包，并演示常见包安装用法
 cd $HOME/local/package
 wget -c http://pypi.douban.com/packages/source/s/setuptools/setuptools-2.0.1.tar.gz
 tar xvfz setuptools-2.0.1.tar.gz
 cd setuptools-2.0.1
 python setup.py install
 
-#此处可通过配置easy_install来实现无需重复输入
 easy_install -i http://pypi.douban.com/simple/ ipython
 easy_install -i http://pypi.douban.com/simple/ django
 easy_install -i http://pypi.douban.com/simple/ SQLAlchemy
 easy_install -i http://pypi.douban.com/simple/ virtualenv
 ```
+以上就是全部，有几点需要留意:
+- `mkdir $HOME/local/xxx......`我个人一般习惯于在HOME目录下创建一个『伪根目录结构』，将所有用户态的应用，都安装到$HOME下。
+- 使用了sohu.com的源，你可以改为163的或者官方的均可
+- 修改用户bash_profile文件，对于桌面用户，此处可能需要改为 $HOME/.bashrc
+- 留意环境变量的改动，只简单的修改了PATH与LD\_LIBRARY\_PATH变量，对于部分应用，你也许需要如CLASSPATH(Java)，MANPATH等
+- source命令使环境变量立即生效，对于服务器用户而言使用.bash_profile是正确的，对于桌面用户而言，可能需要修正为$HOME/.bashrc
+- 此处使用了豆瓣源，安装一些常见包，并演示常见包安装用法，可通过配置easy\_install来实现无需每次easy\_install时都要指定pypi源
 
 嗯，执行python试试:
 ``` Bash
@@ -112,4 +109,3 @@ object?   -> Details about 'object', use 'object??' for extra details.
 In [1]: 
 ```
 是否已在非root用户下，成功的构建了一个全套的python环境了，即使是现在，你仍然可以使用virtualenv之类的第三方隔离工具，在用户环境下进一步隔离，以上就是鄙人平时开发中的一点小小的心得，现分享并整理。
-
