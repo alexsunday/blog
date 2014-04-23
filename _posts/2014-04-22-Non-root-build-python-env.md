@@ -88,6 +88,7 @@ easy_install -i http://pypi.douban.com/simple/ virtualenv
 - 此处使用了豆瓣源，安装一些常见包，并演示常见包安装用法，可通过配置easy\_install来实现无需每次easy\_install时都要指定pypi源
 
 嗯，执行python试试:
+
 ``` Bash
 $ python
 Python 2.7.6 (default, Jan 11 2014, 19:15:27) 
@@ -95,7 +96,9 @@ Python 2.7.6 (default, Jan 11 2014, 19:15:27)
 Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 ```
+
 是吧，已经切换为了最新的2.7.6版本了，也可以试试ipython命令：
+
 ``` Bash
 $ ipython
 Python 2.7.6 (default, Jan 11 2014, 19:15:27) 
@@ -109,4 +112,6 @@ object?   -> Details about 'object', use 'object??' for extra details.
 
 In [1]: 
 ```
+
 是否已在非root用户下，成功的构建了一个全套的python环境了，即使是现在，你仍然可以使用virtualenv之类的第三方隔离工具，在用户环境下进一步隔离，以上就是鄙人平时开发中的一点小小的心得，现分享并整理。
+
