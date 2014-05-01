@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Spark上手试玩
+tags: Spark Hadoop Hadoop2 Shark pyspark spark-shell
 ---
 
 {{ page.title }}
