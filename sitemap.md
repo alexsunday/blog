@@ -6,12 +6,12 @@ layout: nil
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>ccgzs's blog</title>
- <link href="http://blog.ccgzs.org/sitemap.xml" rel="self"/>
+ <link href="http://blog.ccgzs.org/sitemap" rel="self"/>
  <link href="http://blog.ccgzs.org/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
  <id>http://blog.ccgzs.org/</id>
  <author>
-   <name>ccgzs.org</name>
+   <name>成成工作室</name>
    <email>admin@ccgzs.org</email>
  </author>
 
@@ -25,5 +25,9 @@ layout: nil
  </entry>
  {% endfor %}
  
+ <entry>
+	<title>project</title>
+	<link href="http://blog.ccgzs.org/pages/projects
+ </entry>
 </feed>
 
