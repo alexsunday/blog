@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 手机模拟器
 tags: 手机模拟 webkit html开发
 date: 2013-10-01

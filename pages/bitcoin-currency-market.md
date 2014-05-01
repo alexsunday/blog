@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 比特币莱特币等虚拟货币交易平台
 tags: 比特币 莱特币 交易平台 软件定制 定制开发
 date: 2013-12-13

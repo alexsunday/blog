@@ -1,9 +1,10 @@
 ---
 layout: post
 title: Hello,Pages
+tags: hello world
 ---
 
 {{ page.title }}
 ================ 
 
-Hello,Pages.
+Hello, World.

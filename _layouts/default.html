@@ -1,33 +1,26 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
-   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
    <title>{{ page.title }} - 成成工作室</title>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
    <meta name="author" content="成成工作室" />
-
+   <meta name="keywords" content="{{ page.tags }}" />
    <!-- syntax highlighting CSS -->
-   <!--
-   <link rel="stylesheet" href="{{ site.baseurl }}css/syntax.css" type="text/css" />
-   -->
    <link href="{{ site.baseurl }}css/default.css" rel="stylesheet">
-
    <!-- Homepage CSS -->
    <link rel="stylesheet" href="{{ site.baseurl }}css/screen.css" type="text/css" media="screen, projection" />
-
-	<script type="text/javascript" src="http://tajs.qq.com/stats?sId=32394408" charset="UTF-8"></script>
-	<script src="{{ site.baseurl }}js/highlight.min.js"></script>
-	<script >hljs.initHighlightingOnLoad();</script>  
-
+   <script type="text/javascript" src="http://tajs.qq.com/stats?sId=32394408" charset="UTF-8"></script>
+   <script src="{{ site.baseurl }}js/highlight.min.js"></script>
+   <script >hljs.initHighlightingOnLoad();</script>  
 </head>
 <body>
 
 <div class="site">
   <div class="title">
 	  <a href="{{ site.baseurl }}">Home</a>
-	  <!--<a class="extra" href="http://www.ccgzs.org/">CCGZS</a> -->
-	  <a class="extra" href="#">Project</a>
-	  <a class="extra" href="#">About</a>
-	  <a class="extra" href="mailto:admin@ccgzs.org">Contact us</a>
+	  <a class="extra" href="/pages/projects">Project</a>
+	  <!-- <a class="extra" href="/pages/about">About</a> -->
+	  <a class="extra" href="/pages/contact-us">Contact us</a>
   </div>
   
   {{ content }}
