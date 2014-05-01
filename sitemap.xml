@@ -26,8 +26,33 @@ layout: nil
  {% endfor %}
  
  <entry>
-	<title>project</title>
+	<title>project - 项目</title>
 	<link href="http://blog.ccgzs.org/pages/projects"/>
+ </entry>
+
+ <entry>
+	<title>Contact us - 联系我</title>
+	<link href="http://blog.ccgzs.org/pages/contact-us"/>
+ </entry>
+
+ <entry>
+	<title>项目 众商惠前置服务器</title>
+	<link href="http://blog.ccgzs.org/pages/zhongshanghui"/>
+ </entry>
+
+ <entry>
+	<title>项目 室内云台控制器</title>
+	<link href="http://blog.ccgzs.org/pages/ytmanager"/>
+ </entry>
+
+ <entry>
+	<title>项目 手机模拟器 Web模拟</title>
+	<link href="http://blog.ccgzs.org/pages/mobile-phone-emulator"/>
+ </entry>
+
+ <entry>
+	<title>项目 比特币交易平台</title>
+	<link href="http://blog.ccgzs.org/pages/bitcoin-currency-market"/>
  </entry>
 </feed>
 
