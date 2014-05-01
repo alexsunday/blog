@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hello,Pages
-tags: hello world
+tags: hello,world
 ---
 
 {{ page.title }}
