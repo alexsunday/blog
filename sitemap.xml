@@ -62,7 +62,6 @@ layout: nil
 	<lastmod>2014-05-01 12:00:00</lastmod>
 	<changefreq>daily</changefreq>
 	<priority>0.8</priority>
-	<desc>{{ site.pages }}</desc>
 </url>
 
 </urlset>
