@@ -2,57 +2,67 @@
 layout: nil
 ---
 
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
- 
- <title>ccgzs's blog</title>
- <link href="http://blog.ccgzs.org/sitemap" rel="self"/>
- <link href="http://blog.ccgzs.org/"/>
- <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://blog.ccgzs.org/</id>
- <author>
-   <name>成成工作室</name>
-   <email>admin@ccgzs.org</email>
- </author>
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/static_files/sitemap.xsl"?><!-- generator="wordpress/3.8.1" -->
+<!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="3.4" -->
+<!-- generated-on="2014年03月30日 06:46" -->
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	{% for post in site.posts %}
+	<url>
+		<loc>http://blog.ccgzs.org{{ post.url }}</loc>
+		<lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	{% endfor %}
 
- {% for post in site.posts %}
- <entry>
-   <title>{{ post.title }}</title>
-   <link href="http://blog.ccgzs.org{{ post.url }}"/>
-   <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://blog.ccgzs.org{{ post.id }}</id>
-   <content type="html">{{ post.content | xml_escape }}</content>
- </entry>
- {% endfor %}
- 
- <entry>
-	<title>project - 项目</title>
-	<link href="http://blog.ccgzs.org/pages/projects"/>
- </entry>
+<url>
+	<loc>http://blog.ccgzs.org/pages/projects</loc>
+	<lastmod>2014-05-01 12:00:00</lastmod>
+	<changefreq>daily</changefreq>
+	<priority>0.5</priority>
+</url>
 
- <entry>
-	<title>Contact us - 联系我</title>
-	<link href="http://blog.ccgzs.org/pages/contact-us"/>
- </entry>
+<url>
+	<loc>http://blog.ccgzs.org/pages/contact-us</loc>
+	<lastmod>2014-05-01 12:00:00</lastmod>
+	<changefreq>daily</changefreq>
+	<priority>0.5</priority>
+</url>
 
- <entry>
-	<title>项目 众商惠前置服务器</title>
-	<link href="http://blog.ccgzs.org/pages/zhongshanghui"/>
- </entry>
+<url>
+	<loc>http://blog.ccgzs.org/pages/zhongshanghui</loc>
+	<lastmod>2014-05-01 12:00:00</lastmod>
+	<changefreq>daily</changefreq>
+	<priority>0.5</priority>
+</url>
 
- <entry>
-	<title>项目 室内云台控制器</title>
-	<link href="http://blog.ccgzs.org/pages/ytmanager"/>
- </entry>
+<url>
+	<loc>http://blog.ccgzs.org/pages/ytmanager</loc>
+	<lastmod>2014-05-01 12:00:00</lastmod>
+	<changefreq>daily</changefreq>
+	<priority>0.5</priority>
+</url>
 
- <entry>
-	<title>项目 手机模拟器 Web模拟</title>
-	<link href="http://blog.ccgzs.org/pages/mobile-phone-emulator"/>
- </entry>
+<url>
+	<loc>http://blog.ccgzs.org/pages/mobile-phone-emulator</loc>
+	<lastmod>2014-05-01 12:00:00</lastmod>
+	<changefreq>daily</changefreq>
+	<priority>0.5</priority>
+</url>
 
- <entry>
-	<title>项目 比特币交易平台</title>
-	<link href="http://blog.ccgzs.org/pages/bitcoin-currency-market"/>
- </entry>
-</feed>
+<url>
+	<loc>http://blog.ccgzs.org/pages/bitcoin-currency-market</loc>
+	<lastmod>2014-05-01 12:00:00</lastmod>
+	<changefreq>daily</changefreq>
+	<priority>0.5</priority>
+</url>
 
+<url>
+	<loc>http://blog.ccgzs.org/</loc>
+	<lastmod>2014-05-01 12:00:00</lastmod>
+	<changefreq>daily</changefreq>
+	<priority>0.8</priority>
+	<desc>{{ site.pages }}</desc>
+</url>
+
+</urlset>
