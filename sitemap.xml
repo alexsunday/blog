@@ -17,49 +17,49 @@ layout: nil
 
 <url>
 	<loc>http://blog.ccgzs.org/pages/projects</loc>
-	<lastmod>2014-05-01 12:00:00</lastmod>
+	<lastmod>2014-05-01T00:00:00-07:00</lastmod>
 	<changefreq>daily</changefreq>
 	<priority>0.5</priority>
 </url>
 
 <url>
 	<loc>http://blog.ccgzs.org/pages/contact-us</loc>
-	<lastmod>2014-05-01 12:00:00</lastmod>
+	<lastmod>2014-05-01T00:00:00-07:00</lastmod>
 	<changefreq>daily</changefreq>
 	<priority>0.5</priority>
 </url>
 
 <url>
 	<loc>http://blog.ccgzs.org/pages/zhongshanghui</loc>
-	<lastmod>2014-05-01 12:00:00</lastmod>
+	<lastmod>2014-05-01T00:00:00-07:00</lastmod>
 	<changefreq>daily</changefreq>
 	<priority>0.5</priority>
 </url>
 
 <url>
 	<loc>http://blog.ccgzs.org/pages/ytmanager</loc>
-	<lastmod>2014-05-01 12:00:00</lastmod>
+	<lastmod>2014-05-01T00:00:00-07:00</lastmod>
 	<changefreq>daily</changefreq>
 	<priority>0.5</priority>
 </url>
 
 <url>
 	<loc>http://blog.ccgzs.org/pages/mobile-phone-emulator</loc>
-	<lastmod>2014-05-01 12:00:00</lastmod>
+	<lastmod>2014-05-01T00:00:00-07:00</lastmod>
 	<changefreq>daily</changefreq>
 	<priority>0.5</priority>
 </url>
 
 <url>
 	<loc>http://blog.ccgzs.org/pages/bitcoin-currency-market</loc>
-	<lastmod>2014-05-01 12:00:00</lastmod>
+	<lastmod>2014-05-01T00:00:00-07:00</lastmod>
 	<changefreq>daily</changefreq>
 	<priority>0.5</priority>
 </url>
 
 <url>
 	<loc>http://blog.ccgzs.org/</loc>
-	<lastmod>2014-05-01 12:00:00</lastmod>
+	<lastmod>2014-05-01T00:00:00-07:00</lastmod>
 	<changefreq>daily</changefreq>
 	<priority>0.8</priority>
 </url>
