@@ -3,6 +3,7 @@ layout: post
 title: Spark应用开发流程简述
 tags: [Spark, Scala, Bigdata, Java]
 keywords: Spark, Scala, Bigdata, Java
+description: 本文简述Spark-scala应用程序到开发步骤
 published: false
 ---
 
