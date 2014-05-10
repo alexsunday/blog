@@ -2,7 +2,6 @@
 layout: post
 title: 为什么Tornado没有内置Session
 keywords: Tornado, Session, Django, Python Web, Cookies
-description: 为什么性能出众的Python后端框架Tornado未内置Session功能，这是有原因滴。
 ---
 
 {{ page.title }}
