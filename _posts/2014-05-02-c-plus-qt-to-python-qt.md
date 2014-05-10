@@ -2,6 +2,7 @@
 layout: post
 title: C++/Qt与PyQt
 tags: [Qt, C++, PyQt, python]
+keywords: Qt, C++, PyQt, python
 ---
 
 {{ page.title }}

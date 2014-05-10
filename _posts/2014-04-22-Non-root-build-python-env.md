@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 非root构建隔离的Python应用程序环境
-tags: [Python, virtualenv, Python编译安装]
+keywords: Python, virtualenv, Python编译安装
 ---
 
 {{ page.title }}
