@@ -1,3 +1,8 @@
 baseurl: /
 markdown: rdiscount
 pygments: true
+author:
+    name: 成成工作室
+    email: admin@ccgzs.org
+    link: http://blog.ccgzs.org
+title: 博客 - 成成工作室

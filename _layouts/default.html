@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 <head>
-   <title>{{ page.title }} - 成成工作室</title>
+   <title>
+   {% if page.title %}
+	   {{ page.title }}
+   {% else %}
+       {{ site.title }}
+   {% endif %}
+   </title>
    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-   <meta name="author" content="成成工作室" />
-	{% if page.keywords %}
-		<meta name="keywords" content="{{ page.keywords }}">
-	{% endif %}
-	{% if page.description  %}
-		<meta name="description " content="{{ page.description }}">
-	{% endif %}
+   <meta name="author" content="{{ site.author }}" />
+{% if page.keywords %}
+   <meta name="keywords" content="{{ page.keywords }}">
+{% endif %}
+{% if page.description  %}
+   <meta name="description " content="{{ page.description }}">
+{% endif %}
 
-	<!-- <meta name="keywords" content="{{ page.tags }}" /> -->
    <!-- syntax highlighting CSS -->
    <link href="{{ site.baseurl }}css/default.css" rel="stylesheet">
    <!-- Homepage CSS -->
@@ -34,7 +39,7 @@
   {{ content }}
   
   <div class="footer">
-      <p>成成工作室 Copyright 2014 - </p>
+	  <p>{{ site.title }} Copyright 2014 - </p>
   </div>
 </div>
 
