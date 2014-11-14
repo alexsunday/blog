@@ -11,7 +11,7 @@ layout: nil
  <updated>{{ site.time | date_to_xmlschema }}</updated>
  <id>http://blog.ccgzs.org/</id>
  <author>
-   <name>成成工作室</name>
+   <name>成</name>
    <email>admin@ccgzs.org</email>
  </author>
 
