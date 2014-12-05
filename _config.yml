@@ -1,8 +1,9 @@
 baseurl: /
-markdown: rdiscount
+markdown: redcarpet
 pygments: true
 author:
     name: 成
     email: admin@ccgzs.org
     link: http://blog.ccgzs.org
 title: 博客 - 成
+pygments: true
