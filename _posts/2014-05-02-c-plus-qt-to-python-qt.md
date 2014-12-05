@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
 
 对应的Python代码应该是
 
-```python
+{% highlight python %}
 from PyQt4 import QtGui
 from PyQt4 import QtCore
 import sys
@@ -58,7 +58,7 @@ def main(argv):
 
 if __name__ == '__main__':
     main(sys.argv)
-```
+{% endhighlight %}
 
 运行时界面如图
 ![PyQt Demo]({{site.baseurl}}images/cplus_qt_to_py_qt.png)

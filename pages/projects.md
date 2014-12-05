@@ -12,6 +12,7 @@ title: 软件开发
 - [室内云台控制器](/pages/ytmanager)
 - [手机模拟器-Web模拟](/pages/mobile-phone-emulator)
 - [比特币莱特币等交易平台](/pages/bitcoin-currency-market)
+- [微信公众号-服务号](/pages/mpwechat)
 
 以上就是我所做的一部分项目，更多项目陆续添加中，如果你有软件定制开发方面的需求，可[联系我](/pages/contact-us)
 
