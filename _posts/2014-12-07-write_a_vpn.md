@@ -6,12 +6,14 @@ keywords: pyvpn, TCP/IP, tun/tap, VPN
 description: VPN很神奇有木有，自己写一个了不起有木有
 ---
 
+<!--
 - VPN释义
 - 常见用途
 - 当下各种典型VPN
 - 各自的痛点
 - 我们要做什么
 - 代码
+-->
 
 VPN（英语：Virtual Private Network，简称VPN）本意为「虚拟专用网络」，维基百科释义为「一种常用于连接中、大型企业或团体与团体间的私人网络的通讯方法」。
 
@@ -135,3 +137,4 @@ if __name__ == '__main__':
         print u'Usage: pyvpn [-s] [-c]'
 ```
 
+关于代码的解释只能见下一篇了。
