@@ -6,7 +6,7 @@ keywords: kvm, fsck, libvirtd
 description: 虚拟机磁盘损坏了，即不能启动执行fsck，也没有独立硬盘，该如何是好
 ---
 
-使用的是 kvm 虚拟化，Libvirtd管理，所有虚拟机都是clone自某台模板机，但前不久对 母机 进行一次大文件 拷贝操作（从 NTFS到Ext4）时，按了Ctrl-C，导致母机异常Kernel Panic（后来得知是母机配置的RAID0中的某一块硬盘故障导致），母机随后被强制关机，从而导致所有的虚拟机被强制关机。
+使用的是 kvm 虚拟化，Libvirtd管理，所有虚拟机都是clone自某台模板机，但前不久对母机进行一次大文件拷贝操作（从NTFS到Ext4）时，按了Ctrl-C，导致母机异常Kernel Panic（后来得知是母机配置的RAID0中的某一块硬盘故障导致），母机随后被强制关机，从而导致所有的虚拟机被强制关机。
 
 后经过若干方法重新使得母机RAID0恢复，最终使得母机正常开机，而后检查各虚拟机，大部分正常启动，便未继续予以关注。但后来同事爆出其中最重要的数据库机器SSH连不上且无法ping通，此机器上不仅有数据库、还有部门内部svn等等。
 
@@ -30,7 +30,7 @@ $ virsh start tpl-slave1
 $ virsh attach-disk tpl-slave1 vdb /home/ue/tpl-slave4.img
 ```
 
-启动另一台虚拟机 tpl-slave1，并将源盘挂载至新机器，执行`lvscan`，系统提示：`Found duplicate PV` ，原来，所有的机器均克隆自同一台机器，lvm卷管理器无法区分应该使用哪一个底层PV（[这里][2]的办法可以选择性使用哪一个PV，但我当时选择了另外的方法）。遂新建一虚拟机并启动CentOS LiveCD，并将损坏的img文件做为Live机器的磁盘二装载，执行：
+启动另一台虚拟机tpl-slave1，并将源盘挂载至新机器，执行`lvscan`，系统提示：`Found duplicate PV`，原来，所有的机器均克隆自同一台机器，lvm卷管理器无法区分应该使用哪一个底层PV（[这里][2]的办法可以选择性使用哪一个PV，但我当时选择了另外的方法）。遂新建一虚拟机并启动CentOS LiveCD，并将损坏的img文件做为Live机器的磁盘二装载，执行：
 
 `vgchange -ay /dev/vg_tpl`
 
